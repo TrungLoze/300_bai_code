@@ -8,8 +8,12 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",p+i);
     }
-    for(int i=n-1;i>=0;i--){
-        printf("%d ",*(p+i));
+    int k,x;
+    scanf("%d",&k);
+    scanf("%d",&x);
+    p[k] = x;
+    for(int i=0;i<n;i++){
+        printf("%d\n",p[i]);
     }
     return 0;
 }
